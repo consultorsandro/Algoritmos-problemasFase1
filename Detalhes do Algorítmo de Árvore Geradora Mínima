@@ -1,0 +1,18 @@
+Grafo
+Um grafo é uma estrutura de dados composta por vértices (também conhecidos como nós) e arestas que conectam esses vértices. Os vértices representam os objetos ou entidades e as arestas representam as relações ou ligações entre esses objetos.
+
+Peso da aresta
+O peso de uma aresta é um valor numérico associado a uma aresta em um grafo. O peso pode representar uma medida de alguma propriedade ou característica da aresta, como distância, custo, capacidade, etc.
+
+Por exemplo, em um grafo que representa uma rede de transporte, o peso de uma aresta pode representar a distância entre dois vértices (cidades) conectados por essa aresta, enquanto em um grafo que representa um fluxo de trabalho, o peso de uma aresta pode representar o tempo necessário para completar uma tarefa.
+
+MST - Minimm Spanning Tree Árvore Geradora Mínima
+Algoritmo Minimum Spanning Tree (MST) é um algoritmo usado para encontrar a árvore geradora mínima de um grafo conectado e não-dirigido. Uma árvore geradora mínima é uma subestrutura de um grafo que contém todos os vértices do grafo e é uma árvore (ou seja, não contém ciclos) com o menor peso possível.
+
+Existem vários algoritmos diferentes que podem ser usados para encontrar a MST, incluindo o algoritmo de Prim e o algoritmo de Kruskal.
+
+O algoritmo de Prim começa escolhendo um vértice inicial arbitrário e adicionando-o ao conjunto de vértices visitados. Em seguida, enquanto houver vértices não visitados, a aresta com o menor peso que conecta um vértice visitado a um vértice não visitado é adicionada à MST e o vértice não visitado é adicionado ao conjunto de vértices visitados. Esse processo é repetido até que todos os vértices tenham sido visitados.
+
+O algoritmo de Kruskal começa ordenando todas as arestas do grafo pelo peso. Em seguida, as arestas são adicionadas à MST uma a uma, desde que adicionar a aresta não crie um ciclo. Esse processo é repetido até que todos os vértices estejam conectados na MST.
+
+Ambos os algoritmos garantem encontrar a MST de um grafo, porém o algoritmo de Kruskal é mais eficiente para grafos muito grandes ou densos.
