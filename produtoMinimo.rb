@@ -49,6 +49,6 @@ def min_product_subset(a)
     return prod
   end
   
-  a = [1, -1, -2, -4, -3]
+  a = [-1, -1, 2, 4, 3]
   puts min_product_subset(a)
   
