@@ -3,9 +3,11 @@
 def comp(s, t)
     # Split the dates strings
     # when a "/" found
+    # each of the three parts of split will be included in a position of the array
     ss = s.split("/")
     tt = t.split("/")
-  
+
+    # creates a new array named 'date1' with a fixed size of 3 elements initialized to the default value 'nil'
     date1 = Array.new(3)
     date2 = Array.new(3)
   
@@ -17,6 +19,7 @@ def comp(s, t)
     end
   
     # If years are not same
+    # Returns the difference between years
     if date1[2] != date2[2]
       return date1[2] - date2[2]
     end
@@ -39,6 +42,7 @@ def comp(s, t)
   # closest date
   def next_closest_date(arr, q)
     # Sort date array
+    # Sorts the arr array in ascending date order, with the closest date being the first in the array.
     arr.sort! { |a, b| comp(a, b) }
   
     # Perform the Binary search
